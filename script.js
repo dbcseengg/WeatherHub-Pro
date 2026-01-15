@@ -1,4 +1,12 @@
-const API_KEY = "1a5cbade3a3b166e39e266baea91602b"; 
+(function() {
+    window.NETLIFY_API_KEY = 'demo'; // Local fallback
+    
+    // Netlify injects this automatically in production
+    if (typeof process !== 'undefined' && process.env && process.env.NETLIFY_API_KEY) {
+        window.NETLIFY_API_KEY = process.env.NETLIFY_API_KEY;
+    }
+})();
+
 const cities = [
     "Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata",
     "Hyderabad", "Pune", "Ahmedabad", "Jaipur", "Surat"
@@ -301,4 +309,5 @@ animateStyle.textContent = `
 document.head.appendChild(animateStyle);
 
 initApp();
+
 
