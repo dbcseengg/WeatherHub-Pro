@@ -38,7 +38,7 @@ const weatherThemes = {
 async function fetchWeather(city) {
     try {
         const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${API_KEY}&units=metric`
+            `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${window.NETLIFY_API_KEY}&units=metric`
         );
         return await response.json();
     } catch (error) {
@@ -309,5 +309,6 @@ animateStyle.textContent = `
 document.head.appendChild(animateStyle);
 
 initApp();
+
 
 
