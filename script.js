@@ -301,3 +301,4 @@ animateStyle.textContent = `
 document.head.appendChild(animateStyle);
 
 initApp();
+
