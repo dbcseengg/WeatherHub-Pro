@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherHub Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="weather-bg" id="weatherBg">
+        <div class="bg-overlay"></div>
+        <div class="bg-particles" id="particles"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-cloud-sun"></i> WeatherHub Pro</h1>
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button onclick="getWeatherByCity()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Recent Searches -->
+        <section class="recent-searches" id="recentSearches">
+            <h2><i class="fas fa-history"></i> Recent Searches</h2>
+            <div class="recent-container" id="recentContainer"></div>
+        </section>
+
+        <!-- Main Weather Display -->
+        <section class="weather-main" id="weatherMain">
+            <div class="weather-placeholder">
+                <i class="fas fa-magic"></i>
+                <h2>Search for a city to see magic</h2>
+                <p>Enter any city and watch the weather come alive!</p>
+            </div>
+        </section>
+
+        <!-- Carousel -->
+        <section class="carousel">
+            <h2><i class="fas fa-city"></i> Major Cities Weather</h2>
+            <div class="carousel-container" id="carouselContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by <i class="fas fa-bolt"></i> Er.DB | 2026 Edition</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
