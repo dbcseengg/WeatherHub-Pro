@@ -40,9 +40,8 @@
 
 ## 🎥 **Live Demo**
 <div>
-  <p align="center">
-Live site: [**https://your-weatherhub.netlify.app**](https://your-weatherhub.netlify.app) (replace with your URL)    
-  </p>
+
+Live site: [Weatherhub-pro](https://weatherhubpro.netlify.app/)
 
 **Demo Flow:**
 1. Search "Mumbai" → Weather + particles appear
