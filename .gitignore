@@ -1,13 +1,1 @@
-# API Keys & Secrets
-.env
-*.key
-config.js
-api-key.js
-secrets*
 
-# OS Files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
